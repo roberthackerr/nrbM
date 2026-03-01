@@ -16,8 +16,8 @@ app.use(express.json());
 
 // Configuration Gmail OAuth2
 const oauth2Client = new google.auth.OAuth2(
-  process.env.GMAIL_CLIENT_ID,
-  process.env.GMAIL_CLIENT_SECRET,
+ "877979758824-p9tsgqk3u0lccq3cpvhse7dk1u2b4iab.apps.googleusercontent.com",
+  "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",
   'https://developers.google.com/oauthplayground'
 );
 
@@ -34,10 +34,10 @@ async function createTransporter() {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: process.env.GMAIL_USER,
-        clientId: process.env.GMAIL_CLIENT_ID,
-        clientSecret: process.env.GMAIL_CLIENT_SECRET,
-        refreshToken: process.env.GMAIL_REFRESH_TOKEN,
+        user: "tojolinos@gmail.com",
+        clientId: "877979758824-p9tsgqk3u0lccq3cpvhse7dk1u2b4iab.apps.googleusercontent.com",
+        clientSecret: "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",
+        refreshToken: "1//04FSYcRVAkCOICgYIARAAGAQSNwF-L9IrYO0Dqzt7Tkx3K1xMJu-WoMFDV0i6GhWNBvT-HPl2ygtf3Tta_XeHdZN4xQXv3NiSff0",
         accessToken: accessToken.token
       }
     });
